@@ -3,29 +3,71 @@ body{
     padding: 0;
 }
 
+.container {
+  width: 100%;
+  max-width: 1264px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 35%;
-    padding: 0 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1264px;
+    padding: 0;
     position: absolute;
     top: 0;
 }
 
-header h2{
-    color: green;
+.headerleft{
+    padding-left: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-header p{
+header h2{
+    color: green;
+    padding-left: 7%;
+}
+
+/* header p{
     color: grey;
+} */
+
+#hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    width: max-content;
+}
+
+#hamburger div{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.hidediv{
+    display: none;
+}
+
+
+
+#columnnav nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 7%;
 }
 
 a{
     text-decoration: none;
     color: black;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .greenbtn{
@@ -52,11 +94,11 @@ a{
 }
 
 .heroleft h2{
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 .heroleft p, .learnright p{
-    font-size: 20px;
+    font-size: 1.2rem;
     width: 80%;
 }
 
@@ -67,7 +109,6 @@ a{
 }
 
 #brandcontainer{
-    background-color: aqua;
     display: flex;
     justify-content: center;
 }
@@ -98,12 +139,15 @@ a{
 
 .innerfirst{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between; 
     padding: 40px 0 0 0;   
+    margin: auto;
 }
 
 .innerfirstsub{
     width: 300px;
+    min-width: 190px;
     margin: 10px;
     padding: 10px;
 }
@@ -111,7 +155,7 @@ a{
 .innersubnum{
     margin: auto;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 300;
     padding: 10px;
     width: 40px;
@@ -130,7 +174,7 @@ a{
     width: 350px;
     height: 450px;
     background-color: green;
-    margin: 20px;
+    margin: 10px;
 }
 
 #img{
@@ -149,6 +193,7 @@ a{
 
 #carousel{
     display: flex;
+    width: 100%;
     gap: 20px;
     overflow: hidden;
     padding: 50px 0;
@@ -171,6 +216,8 @@ footer{
     background-image: linear-gradient(to right, rgb(0, 61, 0), rgb(14, 116, 38));
     color: white;
 }
+
+
 
 footer form{
     margin-top: 30px;
@@ -208,11 +255,25 @@ section{
         width: 80%;
         text-align: center;
     }
+    header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header h2 {
+        padding: 0;
+    }
+
+    .headerleft{
+        width: 100%;
+    }
 }
 
 @media (max-width: 726px){
-    header{
-        width: 90%;
+    .headerleft{
+        gap: 40px;
+
     }
 
     .hero{
@@ -238,8 +299,35 @@ section{
         display: none;
     }
 
-    #brands{
-        margin-top: -80px;
+    .learnimg{
         width: 80%;
+        height: 400px;
     }
+
+    #greenbg{
+        position: relative;
+        z-index: 1;
+        margin-left: 50px;
+        margin-top: -370px;
+    }
+
+    #brands{
+        width: 80%;
+        min-width: 225px;
+    }
+
+    #brands img{
+        width: 40%;
+        height: 35px;
+    }
+
+    /* .innerfirst{ */
+        /* justify-content: center;
+        align-items: center; */
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        padding: 40px 0 0 0;   
+        margin: auto; */
+    /* } */
 }
