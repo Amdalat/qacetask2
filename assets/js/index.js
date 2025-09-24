@@ -40,7 +40,7 @@ function createcard(namee, textt, imgg, index) {
     } 
 
     if (index == showingcards[0]) {
-        newdiv.style.marginLeft = "-3%";
+        newdiv.style.marginLeft = "-0.5%";
     }
 
     newdiv.appendChild(newimg);
