@@ -295,6 +295,12 @@ section{
         padding: 40px 0 0 0;  
         /* margin: auto; */
     }
+
+    #learn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 726px){
