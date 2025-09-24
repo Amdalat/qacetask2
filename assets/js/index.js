@@ -1,4 +1,4 @@
-const repoName = "qaceTask2";   
+const repoName = "qacetask2";   
 let basePath = "";
 
 if (window.location.hostname.includes("github.io")) {
