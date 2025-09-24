@@ -129,7 +129,7 @@ a{
 
 .firstseg{
     text-align: center;
-    padding: 40px 7%;
+    padding: 40px 0;
 }
 
 .firstp{
@@ -139,9 +139,11 @@ a{
 
 .innerfirst{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* gap: 0.5%; */
     justify-content: space-between; 
-    padding: 40px 0 0 0;   
+    padding: 40px 0 0 0;  
+    /* width: fit-content;  */
     margin: auto;
 }
 
@@ -193,17 +195,47 @@ a{
 
 #carousel{
     display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 20px 0;
+}
+#btnsdiv{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+}
+
+.carouselbtn{
+    background-color: rgba(128, 128, 128, 0.297);
+    color: black;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    /* height: 80px; */
+    width: fit-content;
+}
+
+#carouselcards{
+    display: flex;
+    justify-content: center;
     width: 100%;
     gap: 20px;
-    overflow: hidden;
+    overflow: scroll;
     padding: 50px 0;
 }
 
+#carouselcards::-webkit-scrollbar {
+    display: none;
+}
+
 .card{
-    flex: 0 0 400px;
+    /* flex: 0 0 370px; */
+    flex: 0 0 38%;
     padding: 20px;
-    background-color: aqua;
+    background-color: white;
     text-align: center;
+    scroll-snap-align: center;
 }
 
 .card img{
@@ -255,25 +287,34 @@ section{
         width: 80%;
         text-align: center;
     }
-    header{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
 
-    header h2 {
-        padding: 0;
-    }
-
-    .headerleft{
-        width: 100%;
+    .innerfirst{
+        flex-wrap: wrap;
+        gap: 1px;
+        justify-content: center; 
+        padding: 40px 0 0 0;  
+        /* margin: auto; */
     }
 }
 
 @media (max-width: 726px){
     .headerleft{
-        gap: 40px;
+        grid-template-columns: span 2;
+        display: flex;
+    }
 
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1264px;
+    }
+    
+    header h2{
+        padding: 0;
+    }
+
+    .headerblank{
+        display: none;
     }
 
     .hero{
@@ -283,7 +324,6 @@ section{
 
     #heroid{
         background-image: url('../images/IMG_20191220_220608.jpg');
-
     }
 
     .heroleft p{
@@ -301,14 +341,14 @@ section{
 
     .learnimg{
         width: 80%;
-        height: 400px;
+        height: 380px;
     }
 
     #greenbg{
         position: relative;
         z-index: 1;
-        margin-left: 50px;
-        margin-top: -370px;
+        margin-left: 40px;
+        margin-top: -360px;
     }
 
     #brands{

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <!-- navbar -->
@@ -17,7 +18,7 @@
                         <nav>
                             <a href="#">Home</a>
                             <a href="#learn">About Us</a>
-                            <a href="footer">Contact Us</a>
+                            <a href="#footer">Contact Us</a>
                         </nav> 
                     </div>
                     <div class="headerblank"></div>
@@ -53,7 +54,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odio laudantium, blanditiis ea ipsa minima odit quasi veniam voluptates ab, obcaecati quibusdam distinctio quidem voluptas non sequi, officia dignissimos iste?</p>
 
                 <div class="herobtns">
-                    <button class="greenbtn">Learn More</button>
+                    <a href="#learn"><button class="greenbtn">Learn More</button></a>
                     <button class="transparentbtn">Watch Video</button>
                 </div>
             </div>
@@ -73,6 +74,7 @@
         </div>    
     </div>
     
+    <!-- dreamhome -->
     <div class="container">
     <div class="firstseg" style="padding-top: 100px;">
         <h1>Find your dream home in a minute</h1>
@@ -103,6 +105,7 @@
     </div>
     </div>
 
+    <!-- aboutus -->
     <div class="container">
     <div class="hero" id="learn">
         <div class="learnleft">
@@ -117,53 +120,49 @@
             </p>
 
             <div class="herobtns">
-                <button class="greenbtn">Contact Us</button>
+                <a href="#footer"><button class="greenbtn">Contact Us</button></a>
             </div>
         </div>
     </div>
     </div>
 
-    <div class="container">
-    <div class="firstseg">
-        <h1>What our clients are saying about us</h1>
-        <p class="firstp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat doloribus laudantium eligendi.</p>
+    <!-- clientscomments -->
+    <div  style=" background-color: whitesmoke">
+        <div class="container">
+            <div class="firstseg">
+                <h1>What our clients are saying about us</h1>
+                <p class="firstp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat doloribus laudantium eligendi.</p>
 
-        <div id="carousel">
-            <div class="card">
-                <img src="./assets/images/IMG_20191220_220608.jpg" alt="">
-                <h2>Rachel Blog</h2>
-                <div class="rating">
-                    <div class="star"></div>
+                <div id="carousel">
+                    <div id="btnsdiv">
+                        <div class="carouselbtn">&lt</div>
+                        <div class="carouselbtn">&gt</div>
+                    </div>
+                    <div id="carouselcards">
+                        <!-- <div class="rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gold" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.329-.314-.158-.888.283-.95l4.898-.696 2.137-4.423c.197-.407.73-.407.927 0l2.137 4.423 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                        </div> -->
+
+                        <!-- <div class="card">
+                            <img src="./assets/images/IMG_20191220_220608.jpg" alt="">
+                            <h2>Rachel Blog</h2>
+                            <div class="rating">
+                                <div class="star"></div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?</p>
+                        </div> -->
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?</p>
-            </div>
-            <div class="card">
-                <img src="./assets/images/IMG_20191220_220608.jpg" alt="">
-                <h2>Rachel Blog</h2>
-                <div class="rating">
-                    <div class="star"></div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?</p>
-            </div>
-            <div class="card">
-                <img src="./assets/images/IMG_20191220_220608.jpg" alt="">
-                <h2>Rachel Blog</h2>
-                <div class="rating">
-                    <div class="star"></div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?</p>
+
             </div>
         </div>
-        
-
-
-    </div>
     </div>
 
     <!-- footer -->
-    <footer class="firstseg">
+    <footer class="firstseg" id="footer">
         <div class="container">
-
             <h1>Get in contact with an agent or house owner</h1>
             <p class="firstp">Lo rem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat doloribus laudantium eligendi.</p>
 
@@ -172,9 +171,12 @@
                 <input type="email" name="email" id="email" placeholder="Email Address">
                 <textarea name="message" id="message" placeholder="Enter your message"></textarea>
             </form>
+            <button class="transparentbtn" id="sendmsg" style="background-color: white;">Send message</button>
+
         </div>
     </footer>
 
+    <!-- copyright -->
     <section>
         <p>&copy; Copyright MSJ2022</p>
     </section>
