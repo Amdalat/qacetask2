@@ -1,13 +1,13 @@
-// const repoName = "qaceTask2";   
-// let basePath = "";
+const repoName = "qaceTask2";   
+let basePath = "";
 
-// if (window.location.hostname.includes("github.io")) {
-//   basePath = `/${repoName}`;
-// } else {
-//   basePath = "..";
-// }
+if (window.location.hostname.includes("github.io")) {
+  basePath = `/${repoName}`;
+} else {
+  basePath = "..";
+}
 
-const users = [{img:"../assets/images/IMG_20191220_220608.jpg", name:"Name1", text: "Lorem1 ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?", rating: 3}, {img:"../assets/images/IMG_20191220_220620.jpg", name:"Name2", text: "Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?", rating: 4}, {img:"../assets/images/IMG_20191220_220608.jpg", name:"Name3", text: "Lorem3 ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?", rating: 4}, {img:"../assets/images/IMG_20191220_220608.jpg", name:"Name4", text: "Lorem4 ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?", rating: 5}, {img:"../assets/images/IMG_20191220_220608.jpg", name:"Name5", text: "Lorem5 ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?", rating: 4}]
+const users = [{img:`${basepath}/assets/images/IMG_20191220_220608.jpg`, name:`Name1`, text: `Lorem1 ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?`, rating: 3}, {img:`${basepath}/assets/images/IMG_20191220_220620.jpg`, name:`Name2`, text: `Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?`, rating: 4}, {img:`${basepath}/assets/images/IMG_20191220_220608.jpg`, name:`Name3`, text: `Lorem3 ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?`, rating: 4}, {img:`${basepath}/assets/images/IMG_20191220_220608.jpg`, name:`Name4`, text: `Lorem4 ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?`, rating: 5}, {img:`${basepath}/assets/images/IMG_20191220_220608.jpg`, name:`Name5`, text: `Lorem5 ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio maiores aliquid officiis magni voluptates aut! Similique voluptatem a explicabo, cum soluta, dicta voluptas ipsam, ullam repellat facere ut laudantium?`, rating: 4}]
 let showingcards = [0,1,2];
 let midcard = showingcards[1];
 
